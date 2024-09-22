@@ -4,6 +4,8 @@ pipeline {
  environment {
     BRANCH_NAME ='main'
     GIT_URL = 'https://github.com/Penda1604/aws-cicd2.git'
+    IMAGE_TAG = 'hillary1604/awscicd'
+    IMAGE_VERSION = ${BUILD_ID}
 
  }
 
@@ -15,7 +17,7 @@ pipeline {
    }
    stage('docker build'){
     steps{
-        sh 'docker build -t awscicd .'
+        sh 'docker build -t "${IMAGE_TAG}:${IMAGE_VERSION}" .'
         sh 'docker images'
     }
    }
