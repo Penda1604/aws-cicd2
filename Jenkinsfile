@@ -4,7 +4,7 @@ pipeline {
  environment {
    BRANCH_NAME = 'main'
    GIT_URL  = 'https://github.com/Penda1604/aws-cicd2.git'
-   IMAGE_TAG = 'hillary1604/aws-cicd2'
+   IMAGE_TAG = 'hillary1604/awscicd'
    IMAGE_VERSION = $"{BUILD_NUMBER}"
  }
 
