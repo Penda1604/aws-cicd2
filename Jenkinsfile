@@ -14,7 +14,7 @@ pipeline {
    }
    stage('docker build'){
     steps{
-        sh 'docker build -t awscicd .'
+        sh 'docker build -t aws-cicd2 .'
         sh 'docker images'
    }
   }
