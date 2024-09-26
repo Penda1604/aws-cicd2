@@ -1,7 +1,7 @@
 pipeline {
  agent any 
 
- environtment {
+ environment {
    BRANCH_NAME = 'main'
    GIT_URL  = 'https://github.com/Penda1604/aws-cicd2.git'
  }
