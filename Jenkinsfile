@@ -5,7 +5,7 @@ pipeline {
    BRANCH_NAME = 'main'
    GIT_URL  = 'https://github.com/Penda1604/aws-cicd2.git'
    IMAGE_TAG = 
-   IMAGE_VERSION = $"{BUILD_NUMBER}"
+   IMAGE_VERSION = "${BUILD_NUMBER}"
  }
 
   stages {
