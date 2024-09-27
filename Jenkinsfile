@@ -6,8 +6,7 @@ pipeline {
         GIT_URL  = 'https://github.com/Penda1604/aws-cicd2.git'
         IMAGE_TAG = "my-app"  
         IMAGE_VERSION = "v1.0" 
-    }
-
+      }
     stages {
         stage('Git Checkout') {
             steps {
